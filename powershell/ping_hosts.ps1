@@ -1,4 +1,4 @@
-﻿$HostsIP = "192.168.0.1", "192.168.0.199", "192.168.1.254"
+﻿$HostsIP = "0.0.0.0", "0.0.0.0", "0.0.0.0" #change these ip addresses to own choice
 
 foreach ($host_ip in $HostsIP) {
     if (Test-Connection -ComputerName $host_ip -Count 1 -Quiet) {
