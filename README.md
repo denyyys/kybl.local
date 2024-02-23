@@ -1,2 +1,2 @@
 # kybl.local
-useful scripts and tweaks to manage domain controller and clients
+useful scripts and tweaks to manage Windows Server, clients and other devices
