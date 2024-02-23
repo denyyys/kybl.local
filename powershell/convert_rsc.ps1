@@ -1,4 +1,6 @@
-﻿$ipAddressesFilePath = "X:\data.txt"
+#converts ip addresses from txt file to RSC script executable in RouterOS for adding ip's to blacklist
+ 
+ $ipAddressesFilePath = "X:\data.txt"
 
 $addressListName = "tor-blacklist"
 
