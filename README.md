@@ -1,2 +1,4 @@
 # kybl.local
-useful scripts and tweaks to manage Windows Server, clients and other devices
+useful scripts, guides and tweaks to manage Windows Server, HPE servers, clients and other devices
+
+[RAID 5 Expand HPE Controller](https://github.com/denyyys/kybl.local/blob/main/guides/RAID5_expand_hpe_controller.md)
