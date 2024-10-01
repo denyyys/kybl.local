@@ -6,22 +6,20 @@
 
 - Restarting the IMAP4 services **doesn't resolve the problem** 
 
-![[Pasted image 20240627101505.png]]
-
 ### Solution:
 
 - open **Exchange Management Shell** on server
 - check the health-state of your server
+  
 ``` powershell
 	Get-HealthReport server.domain.com  | where { $_.state -eq “Offline”}
 ```
 
 - That will most likely return an offline IMAP.Proxy health-state
 
-![[Pasted image 20240627101734.png]]
-
 
 - By setting online the IMAP.Proxy, the IMAP service will come to life
+  
 ``` powershell
 Set-ServerComponentState -Identity server.domain.com -Component IMAPProxy -State Active -Requester HealthAPI
 ```
